@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgriTech — Harvest a Healthier Tomorrow</title>
+  <meta name="description" content="Smart farming for a brighter tomorrow. Innovative technology, higher yields, a more sustainable future." />
+  <link rel="preload" as="image" href="assets/video/poster.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15Zm0 0 8-8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21V10m0 4c-4 0-7-2.5-7-7 4 0 7 2.5 7 7Zm0-4c0-4 2.5-7 7-7 0 4.5-3 7-7 7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M15 27C9 24 6 18 8 8c6 3 9 10 7 19Z" fill="#3fa34d"/><path d="M17 27c6-3 9-9 7-19-6 3-9 10-7 19Z" fill="#7ed957"/></svg>
+      AgriTech
+    </a>
+    <nav class="nav__links">
+      <a href="#top" class="is-active">Home</a>
+      <a href="#field">Solutions</a>
+      <a href="#process">Products</a>
+      <a href="#numbers">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__end">
+      <button class="nav__search" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <a class="btn btn--outline" href="#contact">Get Started</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO: the film plays on its own; the first scroll takes over its playhead -->
+    <section class="hero">
+      <div class="hero__media">
+        <video class="hero__video" muted playsinline autoplay loop preload="auto" poster="assets/video/poster.jpg"></video>
+        <script>
+          // set the source inline so the download starts before any other script
+          (function () {
+            var v = document.currentScript.previousElementSibling;
+            var c = navigator.connection || {};
+            var small = window.innerWidth < 768 || c.saveData;
+            v.src = small ? 'assets/video/hero-720.mp4' : 'assets/video/hero-1080.mp4';
+          })();
+        </script>
+        <div class="hero__shade"></div>
+        <div class="hero__fade"></div>
+      </div>
+
+      <!-- content and stats share one grid so they can never overlap -->
+      <div class="hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow">Smart farming for a brighter tomorrow</p>
+        <h1 class="hero__title">
+          <span class="line">Harvest</span>
+          <span class="line line--green">a Healthier</span>
+          <span class="line">Tomorrow</span>
+        </h1>
+        <p class="hero__sub">Innovative technology. Higher yields. <br />A more sustainable future for generations to come.</p>
+        <div class="hero__cta">
+          <a class="btn btn--green" href="#field">Explore Our Solutions
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#process">
+            <span class="btn__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7v10l8-5Z" fill="currentColor"/></svg></span>
+            Watch Our Story
+          </a>
+        </div>
+      </div>
+
+      <ul class="hero__stats">
+        <li><svg><use href="#i-leaf" /></svg><div><strong>30%</strong><span>Higher yields</span></div></li>
+        <li><svg><use href="#i-drop" /></svg><div><strong>40%</strong><span>Less water</span></div></li>
+        <li><svg><use href="#i-sprout" /></svg><div><strong>100%</strong><span>A greener tomorrow</span></div></li>
+      </ul>
+      </div>
+
+      <div class="hero__side" aria-hidden="true">
+        <i></i>
+        <svg><use href="#i-leaf" /></svg>
+        <span>Cultivating<br />better lives</span>
+        <i></i>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="mouse"><b></b></span>
+        <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- FIELD: floating 3D wheat over huge words whose letters slice apart as they scroll -->
+    <section class="field" id="field">
+      <div class="field__stage">
+        <h2 class="field__word field__word--a">Wheat</h2>
+        <h2 class="field__word field__word--b">Grain</h2>
+        <canvas class="field__gl" aria-hidden="true"></canvas>
+        <canvas class="field__blur" aria-hidden="true"></canvas>
+        <div class="field__fade" aria-hidden="true"></div>
+
+        <div class="field__copy field__copy--a">
+          <span class="field__stat"><sup>ac</sup>4,000</span>
+          <div>
+            <p data-words>Every strand starts with a single seed and a season of care. Grown for strength, harvested at its peak.</p>
+            <a class="field__btn" href="#process">Explore the crop <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="field__copy field__copy--b">
+          <p data-words>Bred for protein and resilience, each ear carries up to fifty kernels, every one a full season of sunlight stored.</p>
+          <p data-words>Its long awns are more than decoration. They shade the grain and keep feeding it right up until harvest.</p>
+        </div>
+
+        <div class="field__copy field__copy--c">
+          <p class="eyebrow">Anatomy of an ear</p>
+          <p data-words>Take a single ear apart and you find a precise structure: paired rows of spikelets, each one protecting its own kernels.</p>
+          <ul class="field__specs">
+            <li><strong>~50</strong><span>Kernels per ear</span></li>
+            <li><strong>2</strong><span>Rows of spikelets</span></li>
+            <li><strong>11–14%</strong><span>Protein content</span></li>
+            <li><strong>120</strong><span>Days, seed to harvest</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="proc" id="process">
+      <div class="proc__aside">
+        <div class="proc__sticky">
+          <p class="eyebrow">How we work</p>
+          <h2 class="proc__title" data-rise>From seed<br />to <span class="green">silo</span></h2>
+          <div class="proc__count" aria-hidden="true">
+            <span class="proc__digits"><b>01</b><b>02</b><b>03</b></span><i>/ 03</i>
+          </div>
+        </div>
+      </div>
+      <div class="proc__list">
+        <article class="step">
+          <figure class="step__img"><img src="assets/img/step-1.jpg" alt="Tractor and seed drill working a dark, freshly prepared field" width="1600" height="900" loading="lazy" /></figure>
+          <h3 data-rise>Soil first</h3>
+          <p data-words>We test every field before planting and rotate crops to keep the ground alive for the next generation.</p>
+        </article>
+        <article class="step">
+          <figure class="step__img"><img src="assets/img/step-2.jpg" alt="Ripening wheat on a rolling hillside under a blue sky" width="1600" height="900" loading="lazy" /></figure>
+          <h3 data-rise>Measured growth</h3>
+          <p data-words>Drone surveys and moisture sensors tell us exactly when, and where, a field needs attention.</p>
+        </article>
+        <article class="step">
+          <figure class="step__img"><img src="assets/img/step-3.jpg" alt="Combine harvester cutting a golden wheat field" width="1600" height="900" loading="lazy" /></figure>
+          <h3 data-rise>Precise harvest</h3>
+          <p data-words>GPS-guided combines cut clean lines, so less grain is lost and every row is accounted for.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="numbers" id="numbers">
+      <div class="wrap numbers__grid">
+        <div class="stat reveal"><strong data-count="4000">0</strong><span>Acres farmed</span></div>
+        <div class="stat reveal"><strong data-count="38">0</strong><span>Years on the land</span></div>
+        <div class="stat reveal"><strong data-count="12">0</strong><span>Hours, field to cooler</span></div>
+        <div class="stat reveal"><strong data-count="96" data-suffix="%">0</strong><span>Grain recovered</span></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__stage">
+        <canvas class="contact__gl" aria-hidden="true"></canvas>
+        <div class="wrap contact__inner">
+          <p class="eyebrow">Work with us</p>
+          <h2 class="contact__title" data-rise>Grow <span class="green">with us</span></h2>
+          <a class="btn btn--green" href="mailto:hello@example.com">Get Started
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="nav__logo" href="#top">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M15 27C9 24 6 18 8 8c6 3 9 10 7 19Z" fill="#3fa34d"/><path d="M17 27c6-3 9-9 7-19-6 3-9 10-7 19Z" fill="#7ed957"/></svg>
+            AgriTech
+          </a>
+          <p>Smart farming for a brighter tomorrow. Innovative technology, higher yields and a more sustainable future.</p>
+          <form class="footer__form" onsubmit="event.preventDefault(); this.classList.add('is-sent');">
+            <input type="email" placeholder="Your email" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="footer__thanks">Thanks — we'll be in touch.</span>
+          </form>
+        </div>
+        <nav class="footer__col">
+          <h4>Explore</h4>
+          <a href="#field">Solutions</a><a href="#process">Products</a><a href="#numbers">About</a><a href="#contact">Contact</a>
+        </nav>
+        <nav class="footer__col">
+          <h4>Company</h4>
+          <a href="#numbers">Our story</a><a href="#process">Sustainability</a><a href="#contact">Careers</a><a href="#contact">Press</a>
+        </nav>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="tel:+10000000000">+1 (000) 000-0000</a>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16.6" cy="7.4" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M7 10v7M7 7v.01M11 17v-4a2.5 2.5 0 0 1 5 0v4m-5-7v7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m10.5 9.5 4 2.5-4 2.5Z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__word" aria-hidden="true">AgriTech</div>
+      <div class="footer__bottom">
+        <span>© 2026 AgriTech. All rights reserved.
+          Photos: <a href="https://commons.wikimedia.org/wiki/File:%D0%97_%D1%8F%D0%BA%D0%B8%D0%BC%D0%B8_%D0%B2%D0%B8%D0%BA%D0%BB%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8_%D0%B2_%D0%B7%D0%B2%E2%80%99%D1%8F%D0%B7%D0%BA%D1%83_%D0%B7_%D0%B2%D1%96%D0%B9%D0%BD%D0%BE%D1%8E_%D1%81%D1%82%D0%B8%D0%BA%D0%BD%D1%83%D0%BB%D0%B8%D1%81%D1%8F_%D0%B0%D0%B3%D1%80%D0%B0%D1%80%D1%96%D1%97_%D1%82%D0%B0_%D1%8F%D0%BA_%D0%B2%D0%B8%D1%80%D1%96%D1%88%D1%83%D1%8E%D1%82%D1%8C_%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B8_-_0014.jpg">Суспільне Тернопіль</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>),
+          <a href="https://commons.wikimedia.org/wiki/File:Combine_Harvesting_Wheat_-_Eastern_Washington_wheat_harvest.jpg">Charles Knowles</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>), colour-graded.</span>
+        <span><a href="#">Privacy</a><a href="#">Terms</a></span>
+        <a href="#top" class="footer__up">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/sections.js"></script>
+</body>
+</html>
